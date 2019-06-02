@@ -36,6 +36,24 @@ worldborder center 0.0 0.0
 ### team modify <teamName> color <color>
 team add black
 team modify black color black
+team add white
+team modify white color white
+team add blue
+team modify blue color blue
+team add green
+team modify green color green
+team add red
+team modify red color red
+team add yellow
+team modify yellow color yellow
+greteam add gray
+team modify gray color gray
+team add aqua
+team modify aqua color aqua
+team add gold
+team modify gold color gold
+team add dark_gray
+team modify dark_gray color dark_gray
 team add dark_blue
 team modify dark_blue color dark_blue
 team add dark_green
@@ -46,23 +64,5 @@ team add dark_red
 team modify dark_red color dark_red
 team add dark_purple
 team modify dark_purple color dark_purple
-team add gold
-team modify gold color gold
-team add gray
-team modify gray color gray
-team add dark_gray
-team modify dark_gray color dark_gray
-team add blue
-team modify blue color blue
-team add green
-team modify green color green
-team add aqua
-team modify aqua color aqua
-team add red
-team modify red color red
 team add light_purple
 team modify light_purple color light_purple
-team add yellow
-team modify yellow color yellow
-team add white
-team modify white color white
