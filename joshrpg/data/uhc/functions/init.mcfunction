@@ -1,13 +1,11 @@
 # UHC INIT
 
 ## Setup World Spawn/Lobby
-tp @p 0.0 91 0.0
 setblock -5 90 -5 structure_block{mode:"LOAD",powered:0b,name:"uhc:lobby"}
 setblock -5 89 -5 minecraft:redstone_block
 setblock -5 89 -5 minecraft:air
 setworldspawn 0 90 0
 gamerule doDaylightCycle false
-effect give @a minecraft:weakness 100000 255 true
 
 ## Setup Game Rules
 ### Overworld
@@ -26,6 +24,13 @@ scoreboard objectives add Health health
 scoreboard objectives setdisplay list Health
 scoreboard objectives add Deaths deathCount
 scoreboard players set @a Deaths 0
+
+## Set the game state pig
+scoreboard objectives add Gamestate dummy
+setblock 30 0 30 air
+execute unless entity @e[type=pig,tag=gamestate] run summon minecraft:pig 30 0 30 {CustomName:"{\"text\":\"Game State Pig\"}",CustomNameVisible:0,Invulnerable:1,NoAI:1,PersistenceRequired:1,Silent:1}
+tag @e[type=pig,x=30,y=0,z=30,dx=1,dy=1,dz=1] add gamestate
+scoreboard players set @e[tag=gamestate,type=pig] Gamestate 0
 
 ## Setup world border
 worldborder add 2000
