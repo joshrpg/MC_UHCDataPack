@@ -11,6 +11,9 @@ effect clear @a
 effect give @a minecraft:saturation 1 20
 effect give @a minecraft:regeneration 2 255
 
+gamemode survival @a[team=!]
+gamemode spectator @a[team=]
+
 gamerule doDaylightCycle true
 
 ## Border Shrinks to a 2x2 for 9000 seconds = 2.5 hours
