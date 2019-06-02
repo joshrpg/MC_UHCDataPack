@@ -46,7 +46,7 @@ team add red
 team modify red color red
 team add yellow
 team modify yellow color yellow
-greteam add gray
+team add gray
 team modify gray color gray
 team add aqua
 team modify aqua color aqua
