@@ -1,10 +1,14 @@
 # Game Start
 
+## update gamestate pig
+scoreboard players set @e[tag=gamestate,type=pig] Gamestate 1
+
 ## spreadplayers <X> <Y> <spreadDistance > <maxDistance> <respectTeams> @a
 spreadplayers 0.0 0.0 500 800 true @a
 
 ## Remove Spawn Box
-fill -5 87 -5 5 93 5 minecraft:air replace
+fill -5 87 -5 5 96 5 minecraft:air replace
+kill @e[type=minecraft:item]
 
 clear @a
 effect clear @a
