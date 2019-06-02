@@ -1,8 +1,10 @@
 # UHC INIT
 
 ## Setup World Spawn/Lobby
-tp @p 0.0 90 0.0
-fill -5 87 -5 5 93 5 minecraft:barrier hollow
+tp @p 0.0 91 0.0
+setblock -5 90 -5 structure_block{mode:"LOAD",powered:0b,name:"uhc:lobby"}
+setblock -5 89 -5 minecraft:redstone_block
+setblock -5 89 -5 minecraft:air
 setworldspawn 0 90 0
 gamerule doDaylightCycle false
 effect give @a minecraft:weakness 100000 255 true
