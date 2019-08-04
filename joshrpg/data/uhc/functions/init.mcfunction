@@ -33,7 +33,7 @@ tag @e[type=pig,x=30,y=0,z=30,dx=1,dy=1,dz=1] add gamestate
 scoreboard players set @e[tag=gamestate,type=pig] Gamestate 0
 
 ## Setup world border
-worldborder add 2000
+worldborder set 2000
 worldborder center 0.0 0.0
 
 ## Setup Teams
