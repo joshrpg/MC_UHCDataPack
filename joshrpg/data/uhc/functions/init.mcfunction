@@ -39,6 +39,7 @@ worldborder center 0.0 0.0
 ## Setup Teams
 ### team add <teamName>
 ### team modify <teamName> color <color>
+team add admin
 team add black
 team modify black color black
 team add white
