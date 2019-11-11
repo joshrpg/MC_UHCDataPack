@@ -5,7 +5,6 @@ setblock -5 90 -5 structure_block{mode:"LOAD",powered:0b,name:"uhc:lobby"}
 setblock -5 89 -5 minecraft:redstone_block
 setblock -5 89 -5 minecraft:air
 setworldspawn 0 90 0
-gamerule doDaylightCycle false
 
 ## Setup Game Rules
 ### Overworld
@@ -17,6 +16,10 @@ execute in minecraft:the_nether run gamerule announceAdvancements false
 ### End
 execute in minecraft:the_end run gamerule naturalRegeneration false
 execute in minecraft:the_end run gamerule announceAdvancements false
+
+### Other rules
+gamerule doDaylightCycle false
+gamerule commandBlockOutput false
 
 ## Setup scoreboard
 scoreboard objectives add Kills playerKillCount
