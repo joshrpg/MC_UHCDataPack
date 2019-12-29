@@ -20,6 +20,10 @@ effect clear @a
 effect give @a minecraft:saturation 1 20
 effect give @a minecraft:regeneration 2 255
 
+## Reset Deaths scoareboards
+
+scoreboard players reset @a Deaths
+
 ## Set game modes
 
 gamemode survival @a[team=!]
