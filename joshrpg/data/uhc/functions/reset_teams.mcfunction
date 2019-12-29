@@ -1,0 +1,1 @@
+team leave @a[team=!admin]
