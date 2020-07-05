@@ -37,3 +37,7 @@ gamerule doDaylightCycle true
 ## Border Shrinks to a 2x2 for 9000 seconds = 2.5 hours
 
 worldborder set 2 9000
+
+## Makes sure the game is set to "hard"
+
+difficulty hard
