@@ -1,5 +1,9 @@
 # Game Start
 
+## make sure the gamestate pig exists
+
+execute unless entity @e[type=pig,tag=gamestate] run summon minecraft:pig 30 0 30 {CustomName:"{\"text\":\"Game State Pig\"}",CustomNameVisible:0,Invulnerable:1,NoAI:1,PersistenceRequired:1,Silent:1,Tags:["gamestate"]}
+
 ## update gamestate pig
 
 scoreboard players set @e[tag=gamestate,type=pig] Gamestate 1
