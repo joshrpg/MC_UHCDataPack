@@ -46,3 +46,7 @@ execute in minecraft:overworld run worldborder set 16 9000
 ## Makes sure the game is set to "hard"
 
 difficulty hard
+
+## Start PvP timer
+
+function uhc:start_pvp_timer
