@@ -45,10 +45,18 @@ execute unless entity @e[type=pig,tag=gamestate] run summon minecraft:pig 30 0 3
 tag @e[type=pig,x=30,y=0,z=30,dx=1,dy=1,dz=1] add gamestate
 scoreboard players set @e[tag=gamestate,type=pig] Gamestate 0
 
-## Setup world border
+## Setup world borders
+## Don't change the order because this works only on spigot/papermc
 
-worldborder set 2000
-worldborder center 0.0 0.0
+### Setup world border for overworld
+
+execute in minecraft:the_nether run worldborder set 250
+execute in minecraft:the_nether run worldborder center 0.0 0.0
+
+### Setup world border for overworld
+
+execute in minecraft:overworld run worldborder set 2000
+execute in minecraft:overworld run worldborder center 0.0 0.0
 
 ## Setup Teams
 
