@@ -35,9 +35,13 @@ gamemode spectator @a[team=]
 time set 0
 gamerule doDaylightCycle true
 
-## Border Shrinks to a 2x2 for 9000 seconds = 2.5 hours
+## Border Shrinks to a 2x2 for 9000 seconds (2.5 hours)
 
-worldborder set 16 9000
+execute in minecraft:the_nether run worldborder set 2 9000
+
+## Border Shrinks to a 16x16 for 9000 seconds (2.5 hours)
+
+execute in minecraft:overworld run worldborder set 16 9000
 
 ## Makes sure the game is set to "hard"
 
