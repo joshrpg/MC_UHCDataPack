@@ -32,7 +32,7 @@ gamemode spectator @a[team=]
 
 ## Do some time stuff
 
-time set 400
+time set 0
 gamerule doDaylightCycle true
 
 ## Border Shrinks to a 2x2 for 9000 seconds = 2.5 hours
