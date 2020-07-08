@@ -37,12 +37,11 @@ scoreboard objectives setdisplay list Health
 scoreboard objectives add Deaths deathCount
 scoreboard players set @a Deaths 0
 
-## Set the game state pig
+## Create the game state pig
 
 scoreboard objectives add Gamestate dummy
 setblock 30 0 30 air
-execute unless entity @e[type=pig,tag=gamestate] run summon minecraft:pig 30 0 30 {CustomName:"{\"text\":\"Game State Pig\"}",CustomNameVisible:0,Invulnerable:1,NoAI:1,PersistenceRequired:1,Silent:1}
-tag @e[type=pig,x=30,y=0,z=30,dx=1,dy=1,dz=1] add gamestate
+execute unless entity @e[type=pig,tag=gamestate] run summon minecraft:pig 30 0 30 {CustomName:"{\"text\":\"Game State Pig\"}",CustomNameVisible:0,Invulnerable:1,NoAI:1,PersistenceRequired:1,Silent:1,Tags:["gamestate"]}
 scoreboard players set @e[tag=gamestate,type=pig] Gamestate 0
 
 ## Setup world borders
