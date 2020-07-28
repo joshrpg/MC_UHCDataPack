@@ -37,6 +37,11 @@ scoreboard objectives setdisplay list Health
 scoreboard objectives add Deaths deathCount
 scoreboard players set @a Deaths 0
 
+## Create PVP Announcement Timer
+
+scoreboard objectives add pvpAnnouncementCounter dummy "PVP Announcement Timer"
+scoreboard players set @e pvpAnnouncementCounter 0
+
 ## Create the game state pig
 
 scoreboard objectives add Gamestate dummy
