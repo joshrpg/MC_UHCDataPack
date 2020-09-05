@@ -41,7 +41,8 @@ gamerule doDaylightCycle true
 
 ## Border Shrinks to a 2x2 for 9000 seconds (2.5 hours)
 
-execute in minecraft:the_nether run worldborder set 2 9000
+# Disabling until I can figure out why the borders don't sync. Probably math.
+# execute in minecraft:the_nether run worldborder set 2 9000
 
 ## Border Shrinks to a 16x16 for 9000 seconds (2.5 hours)
 
