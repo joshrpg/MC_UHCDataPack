@@ -54,11 +54,6 @@ scoreboard players set @e[tag=gamestate,type=pig] Gamestate 0
 
 ### Setup world border for overworld
 
-execute in minecraft:the_nether run worldborder set 250
-execute in minecraft:the_nether run worldborder center 0.0 0.0
-
-### Setup world border for overworld
-
 execute in minecraft:overworld run worldborder set 2000
 execute in minecraft:overworld run worldborder center 0.0 0.0
 
