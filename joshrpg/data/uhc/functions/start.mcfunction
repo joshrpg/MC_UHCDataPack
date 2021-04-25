@@ -46,7 +46,7 @@ gamerule doDaylightCycle true
 
 ## Border Shrinks to a 16x16 for 9000 seconds (2.5 hours)
 
-execute in minecraft:overworld run worldborder set 16 9000
+execute in minecraft:overworld run worldborder set 32 9000
 
 ## Makes sure the game is set to "hard"
 
