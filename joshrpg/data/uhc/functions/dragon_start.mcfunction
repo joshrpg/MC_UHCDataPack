@@ -22,6 +22,9 @@ effect clear @a
 effect give @a minecraft:saturation 1 20
 effect give @a minecraft:regeneration 2 255
 
+## Turn on End Advancements
+execute in minecraft:the_end run gamerule announceAdvancements true
+
 ## Reset Deaths scoareboards
 
 scoreboard players reset @a Deaths
