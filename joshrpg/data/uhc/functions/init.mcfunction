@@ -48,7 +48,7 @@ scoreboard objectives add epCounterTimer dummy "Episode Counter Timer"
 scoreboard players set @e epCounterTimer 0
 
 scoreboard objectives add epCounter dummy "Episode Counter"
-scoreboard players set @e epCounter 1
+scoreboard players set @e epCounter 0
 
 ## Create the game state pig
 
