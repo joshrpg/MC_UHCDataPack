@@ -10,7 +10,7 @@ scoreboard players set @e[tag=gamestate,type=pig] Gamestate 1
 
 ## spreadplayers <X> <Y> <spreadDistance > <maxDistance> <respectTeams> @a
 
-spreadplayers 0.0 0.0 500 800 true @a[team=!spec]
+spreadplayers 0.0 0.0 750 1600 true @a[team=!spec]
 
 ## Remove Spawn Box
 

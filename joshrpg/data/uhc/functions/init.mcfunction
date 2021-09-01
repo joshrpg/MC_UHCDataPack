@@ -42,6 +42,14 @@ scoreboard players set @a Deaths 0
 scoreboard objectives add pvpAnnCounter dummy "PVP Announcement Timer"
 scoreboard players set @e pvpAnnCounter 0
 
+## Create Episode Counter
+
+scoreboard objectives add epCounterTimer dummy "Episode Counter Timer"
+scoreboard players set @e epCounterTimer 0
+
+scoreboard objectives add epCounter dummy "Episode Counter"
+scoreboard players set @e epCounter 1
+
 ## Create the game state pig
 
 scoreboard objectives add Gamestate dummy
@@ -54,7 +62,7 @@ scoreboard players set @e[tag=gamestate,type=pig] Gamestate 0
 
 ### Setup world border for overworld
 
-execute in minecraft:overworld run worldborder set 2000
+execute in minecraft:overworld run worldborder set 4000
 execute in minecraft:overworld run worldborder center 0.0 0.0
 
 ## Setup Teams
