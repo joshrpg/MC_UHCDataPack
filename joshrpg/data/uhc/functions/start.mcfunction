@@ -2,7 +2,7 @@
 
 ## make sure the gamestate pig exists
 
-execute unless entity @e[type=pig,tag=gamestate] run summon minecraft:pig 30 0 30 {CustomName:"{\"text\":\"Game State Pig\"}",CustomNameVisible:0,Invulnerable:1,NoAI:1,PersistenceRequired:1,Silent:1,Tags:["gamestate"]}
+execute unless entity @e[type=pig,tag=gamestate] run summon minecraft:pig 30 0 30 {CustomName: '{"text":"Game State Pig"}', CustomNameVisible: 0, Invulnerable: 1, NoAI: 1, PersistenceRequired: 1, Silent: 1, Tags: ["gamestate"]}
 
 ## update gamestate pig
 
@@ -36,7 +36,7 @@ gamemode spectator @a[team=]
 
 ## Do some time stuff
 
-time set 0
+time set 0t
 gamerule doDaylightCycle true
 
 ## Border Shrinks to a 2x2 for 9000 seconds (2.5 hours)

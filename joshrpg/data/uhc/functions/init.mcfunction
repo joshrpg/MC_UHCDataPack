@@ -2,7 +2,7 @@
 
 ## Setup World Spawn/Lobby
 
-setblock -5 90 -5 structure_block{mode:"LOAD",powered:0b,name:"uhc:lobby"}
+setblock -5 90 -5 structure_block{mode: "LOAD", powered: 0b, name: "uhc:lobby"}
 setblock -5 89 -5 minecraft:redstone_block
 setblock -5 89 -5 minecraft:air
 setworldspawn 0 90 0
@@ -46,7 +46,7 @@ scoreboard players set @e pvpAnnCounter 0
 
 scoreboard objectives add Gamestate dummy
 setblock 30 0 30 air
-execute unless entity @e[type=pig,tag=gamestate] run summon minecraft:pig 30 0 30 {CustomName:"{\"text\":\"Game State Pig\"}",CustomNameVisible:0,Invulnerable:1,NoAI:1,PersistenceRequired:1,Silent:1,Tags:["gamestate"]}
+execute unless entity @e[type=pig,tag=gamestate] run summon minecraft:pig 30 0 30 {CustomName: '{"text":"Game State Pig"}', CustomNameVisible: 0, Invulnerable: 1, NoAI: 1, PersistenceRequired: 1, Silent: 1, Tags: ["gamestate"]}
 scoreboard players set @e[tag=gamestate,type=pig] Gamestate 0
 
 ## Setup world borders
