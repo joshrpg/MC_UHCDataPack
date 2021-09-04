@@ -39,6 +39,13 @@ gamemode spectator @a[team=]
 time set 0t
 gamerule doDaylightCycle true
 
+## Game Rules
+
+gamerule disableRaids false
+gamerule doInsomnia true
+gamerule doMobSpawning true
+gamerule doPatrolSpawning false
+
 ## Border Shrinks to a 2x2 for 9000 seconds (2.5 hours)
 
 # Disabling until I can figure out why the borders don't sync. Probably math.
