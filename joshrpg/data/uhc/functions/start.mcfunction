@@ -61,4 +61,4 @@ difficulty hard
 
 ## Start PvP timer
 
-function uhc:start_pvp_timer
+function uhc:pvp_timer_start
