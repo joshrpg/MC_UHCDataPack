@@ -27,8 +27,12 @@ execute in minecraft:the_end run gamerule announceAdvancements false
 
 ### Other rules
 
-gamerule doDaylightCycle false
 gamerule commandBlockOutput false
+gamerule disableRaids true
+gamerule doDaylightCycle false
+gamerule doInsomnia false
+gamerule doMobSpawning false
+gamerule doPatrolSpawning false
 
 ## Setup scoreboard
 
