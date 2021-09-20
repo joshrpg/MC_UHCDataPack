@@ -8,7 +8,7 @@ gamemode spectator @a[scores={Deaths=1}]
 
 scoreboard players add @e[tag=pvp_timer,type=minecraft:armor_stand] pvpAnnCounter 1
 scoreboard players add @e[tag=pvp_timer,type=minecraft:armor_stand] epCounterTimer 1
-scoreboard players add @e[tag=pvp_timer,type=minecraft:armor_stand] CountdownTimer 1
+scoreboard players add @e[tag=pvp_timer,type=minecraft:armor_stand] countDownTimer 1
 
 ## Notifies all players that pvp is now allowed 
 

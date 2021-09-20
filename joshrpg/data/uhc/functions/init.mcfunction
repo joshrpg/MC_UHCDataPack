@@ -11,7 +11,7 @@ setworldspawn 0 90 0
 
 ### Overworld
 
-gamemode peaceful
+difficulty peaceful
 execute in minecraft:overworld run gamerule naturalRegeneration false
 execute in minecraft:overworld run gamerule announceAdvancements false
 
@@ -51,12 +51,12 @@ scoreboard players set @e epCounterTimer 0
 scoreboard objectives add epCounter dummy "Episode Counter"
 scoreboard players set @e epCounter 0
 
-## Create Countdown
+## Create Episode Counter
 
-scoreboard objectives add countDownTimer dummy "Countdown Timer"
+scoreboard objectives add countDownTimer dummy "Count Down Timer"
 scoreboard players set @e countDownTimer 0
 
-scoreboard objectives add countDown dummy "Countdown Counter"
+scoreboard objectives add countDown dummy "Count Down Counter"
 scoreboard players set @e countDown 0
 
 ## Create the game state pig
