@@ -3,3 +3,5 @@ summon minecraft:armor_stand 30 0 30 {CustomName:"{\"text\":\"PvPTimer\"}",Custo
 scoreboard players set @e[tag=pvp_timer,type=minecraft:armor_stand] pvpAnnCounter 0
 scoreboard players set @e[tag=pvp_timer,type=minecraft:armor_stand] epCounter 1
 scoreboard players set @e[tag=pvp_timer,type=minecraft:armor_stand] epCounterTimer 0
+scoreboard players set @e[tag=pvp_timer,type=minecraft:armor_stand] countDown 10
+scoreboard players set @e[tag=pvp_timer,type=minecraft:armor_stand] countDownTimer 0

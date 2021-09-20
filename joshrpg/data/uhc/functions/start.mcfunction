@@ -55,3 +55,7 @@ difficulty hard
 ## Start PvP timer
 
 function uhc:start_pvp_timer
+
+## Clear Weather for 20 minutes (I think this will make it rain at exactly 20 minutes)
+
+weather clear 1200
