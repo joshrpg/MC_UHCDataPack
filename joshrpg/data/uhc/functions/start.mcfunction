@@ -32,7 +32,7 @@ scoreboard players reset @a Deaths
 
 gamemode survival @a[team=!]
 gamemode spectator @a[team=admin]
-gamemode spectator @a[team=]
+#gamemode spectator @a[team=]
 
 ## Do some time stuff
 
