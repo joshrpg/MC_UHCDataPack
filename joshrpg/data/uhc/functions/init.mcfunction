@@ -101,3 +101,17 @@ team add dark_purple
 team modify dark_purple color dark_purple
 team add light_purple
 team modify light_purple color light_purple
+
+## Init Timers
+
+### Create Hunger Timer
+
+kill @e[tag=hunger_timer,type=minecraft:armor_stand]
+summon minecraft:armor_stand 30 0 30 {CustomName: '{"text":"Hunger Timer"}', CustomNameVisible: 0, Invulnerable: 1, NoGravity: 1, Invisible: 0, Tags: ["hunger_timer"]}
+scoreboard objectives remove netherHungerStrike
+scoreboard objectives add netherHungerStrike dummy "Hunger Timer"
+scoreboard objectives add netherHungerStrikeTimeLimit dummy "Hunger Timer Limit"
+scoreboard players set @e[tag=hunger_timer,type=minecraft:armor_stand] netherHungerStrike 0
+scoreboard players set @e[tag=hunger_timer,type=minecraft:armor_stand] netherHungerStrikeTimeLimit 6000
+data modify storage uhc:border nether_hunger_strike set value 0
+data modify storage uhc:border width set value 0
