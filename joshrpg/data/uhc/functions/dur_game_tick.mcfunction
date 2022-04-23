@@ -15,4 +15,4 @@ execute if score @e[type=minecraft:armor_stand,tag=pvp_timer,limit=1] pvpAnnCoun
 ## Hunger functions
 
 execute store result storage uhc:border width int 1 run worldborder get
-execute if data storage uhc:border {width: 32} run function uhc:hunger_strike
+execute if data storage uhc:border {width: 64} run function uhc:hunger_strike
