@@ -51,9 +51,9 @@ gamerule doPatrolSpawning false
 # Disabling until I can figure out why the borders don't sync. Probably math.
 # execute in minecraft:the_nether run worldborder set 2 9000
 
-## Border Shrinks to a 16x16 for 9000 seconds (2.5 hours)
+## Border Shrinks to a 64x64 for 9000 seconds (2.5 hours)
 
-execute in minecraft:overworld run worldborder set 32 9000
+execute in minecraft:overworld run worldborder set 64 9000
 
 ## Makes sure the game is set to "hard"
 
