@@ -2,10 +2,8 @@
 
 ## Setup World Spawn/Lobby
 
-setblock -5 90 -5 structure_block{mode: "LOAD", powered: 0b, name: "uhc:lobby"}
-setblock -5 89 -5 minecraft:redstone_block
-setblock -5 89 -5 minecraft:air
-setworldspawn 0 90 0
+execute unless entity @e[tag=lobby_locator] run summon minecraft:marker 0 64 0 {Tags:["lobby_locator"]}
+execute unless entity @e[tag=lobby_locator,tag=lobby_placed] run function uhc:locate_lobby
 
 ## Setup Game Rules
 
@@ -52,6 +50,7 @@ scoreboard objectives add Gamestate dummy
 setblock 30 0 30 air
 execute unless entity @e[type=pig,tag=gamestate] run summon minecraft:pig 30 0 30 {CustomName: '{"text":"Game State Pig"}', CustomNameVisible: 0, Invulnerable: 1, NoAI: 1, PersistenceRequired: 1, Silent: 1, Tags: ["gamestate"]}
 scoreboard players set @e[tag=gamestate,type=pig] Gamestate 0
+scoreboard players reset dragon_uhc
 
 ## Setup world borders
 ## Don't change the order because this works only on spigot/papermc
