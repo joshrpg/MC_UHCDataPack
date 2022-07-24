@@ -10,11 +10,12 @@ scoreboard players set @e[tag=gamestate,type=pig] Gamestate 1
 
 ## spreadplayers <X> <Y> <spreadDistance > <maxDistance> <respectTeams> @a
 
-spreadplayers 0.0 0.0 500 800 true @a[team=!spec]
+spreadplayers 0.0 0.0 500 800 true @a[team=!spec,team=!admin]
 
 ## Remove Spawn Box
 
-fill -5 87 -5 5 96 5 minecraft:air replace
+execute at @e[tag=lobby_locator] run fill ~5 ~ ~5 ~-5 ~6 ~-5 minecraft:air replace
+kill @e[tag=lobby_locator]
 kill @e[type=minecraft:item]
 
 ## Set up players
@@ -51,9 +52,9 @@ gamerule doPatrolSpawning false
 # Disabling until I can figure out why the borders don't sync. Probably math.
 # execute in minecraft:the_nether run worldborder set 2 9000
 
-## Border Shrinks to a 64x64 for 9000 seconds (2.5 hours)
+## Border Shrinks to a 64x64 for 9000 seconds (2.5 hours) unless it's a Dragon UHC
 
-execute in minecraft:overworld run worldborder set 64 9000
+execute unless score dragon_uhc Gamestate matches 1 run execute in minecraft:overworld run worldborder set 64 9000
 
 ## Makes sure the game is set to "hard"
 
