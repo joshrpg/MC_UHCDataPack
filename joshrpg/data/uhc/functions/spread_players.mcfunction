@@ -18,3 +18,7 @@ effect give @a[team=!admin] minecraft:jump_boost 1000000 128 true
 ## Set spread_players Gamestate to mark players as spread
 
 scoreboard players set spread_players Gamestate 1
+
+## Start team ready up if start was not already run
+
+execute unless score @e[type=pig,tag=gamestate,limit=1] Gamestate matches 1 run function uhc:ready_up/init
