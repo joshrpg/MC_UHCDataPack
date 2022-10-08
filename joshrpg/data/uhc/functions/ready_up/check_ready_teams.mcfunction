@@ -1,5 +1,5 @@
 #Check to see which teams are ready, looped when running ready up
-say "Checking"
+
 execute if entity @p[team=red,scores={readyuptrigger=1..}] run function uhc:ready_up/team/red_team
 execute if entity @p[team=blue,scores={readyuptrigger=1..}] run function uhc:ready_up/team/blue_team
 execute if entity @p[team=green,scores={readyuptrigger=1..}] run function uhc:ready_up/team/green_team
