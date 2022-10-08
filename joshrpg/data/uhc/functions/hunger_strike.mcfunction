@@ -1,6 +1,6 @@
 # Do the hunger things
 
-execute if data storage uhc:border {width: 32} if data storage uhc:border {nether_hunger_strike: 0} run tellraw @a[nbt={Dimension: "minecraft:the_nether"}] {"text":"Hunger will gradually increase every minute if you don't leave the Nether.","color":"blue"}
+execute if data storage uhc:border {width: 64} if data storage uhc:border {nether_hunger_strike: 0} run tellraw @a[nbt={Dimension: "minecraft:the_nether"}] {"text":"Hunger will gradually increase every minute if you don't leave the Nether.","color":"blue"}
 
 data modify storage uhc:border nether_hunger_strike set value 1
 
