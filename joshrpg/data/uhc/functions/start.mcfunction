@@ -8,15 +8,9 @@ execute unless entity @e[type=pig,tag=gamestate] run summon minecraft:pig 30 0 3
 
 scoreboard players set @e[tag=gamestate,type=pig] Gamestate 1
 
-## spreadplayers <X> <Y> <spreadDistance > <maxDistance> <respectTeams> @a
+## spreadplayers if not done already
 
-spreadplayers 0.0 0.0 500 800 true @a[team=!spec,team=!admin]
-
-## Remove Spawn Box
-
-execute at @e[tag=lobby_locator] run fill ~5 ~ ~5 ~-5 ~6 ~-5 minecraft:air replace
-kill @e[tag=lobby_locator]
-kill @e[type=minecraft:item]
+execute unless score spread_players Gamestate matches 1 run function uhc:spread_players
 
 ## Set up players
 
@@ -31,7 +25,7 @@ scoreboard players reset @a Deaths
 
 ## Set game modes
 
-gamemode survival @a[team=!]
+gamemode survival @a[team=!admin]
 gamemode spectator @a[team=admin]
 #gamemode spectator @a[team=]
 

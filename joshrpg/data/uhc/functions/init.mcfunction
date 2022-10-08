@@ -50,6 +50,7 @@ scoreboard objectives add Gamestate dummy
 setblock 30 0 30 air
 execute unless entity @e[type=pig,tag=gamestate] run summon minecraft:pig 30 0 30 {CustomName: '{"text":"Game State Pig"}', CustomNameVisible: 0, Invulnerable: 1, NoAI: 1, PersistenceRequired: 1, Silent: 1, Tags: ["gamestate"]}
 scoreboard players set @e[tag=gamestate,type=pig] Gamestate 0
+scoreboard players reset spread_players
 scoreboard players reset dragon_uhc
 
 ## Setup world borders
