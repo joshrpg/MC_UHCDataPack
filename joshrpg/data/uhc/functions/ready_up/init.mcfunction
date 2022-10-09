@@ -54,12 +54,12 @@ scoreboard objectives setdisplay sidebar readyup
 ## Enables people to vote
 
 scoreboard objectives add readyuptrigger trigger
-scoreboard players enable @a readyuptrigger
+scoreboard players enable @a[team=!admin] readyuptrigger
 
-tellraw @a ["",{"text":"================================\nReady up your team by clicking ","color":"gold"},{"text":"here!","underlined":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger readyuptrigger set 1"}},{"text":"\n================================","color":"gold"}]
+tellraw @a[team=!admin] ["",{"text":"================================\nReady up your team by clicking ","color":"gold"},{"text":"here!","underlined":true,"color":"green","clickEvent":{"action":"run_command","value":"/trigger readyuptrigger set 1"}},{"text":"\n================================","color":"gold"}]
 
-title @a subtitle [{"text":"Ready up in Chat!","color":"gold"}]
-title @a title {"text":""}
+title @a[team=!admin] subtitle [{"text":"Ready up in Chat!","color":"gold"}]
+title @a[team=!admin] title {"text":""}
 
 # Starts the checks on which teams have readied up
 
