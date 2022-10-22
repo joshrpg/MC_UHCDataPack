@@ -44,7 +44,7 @@ scoreboard players set @a Deaths 0
 scoreboard objectives add pvpAnnCounter dummy "PVP Announcement Timer"
 scoreboard players set @e pvpAnnCounter 0
 
-## Create the game state pig
+## Create the game state scores
 
 scoreboard objectives add Gamestate dummy
 setblock 30 0 30 air
