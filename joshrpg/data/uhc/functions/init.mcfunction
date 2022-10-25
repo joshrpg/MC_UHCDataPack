@@ -38,6 +38,8 @@ scoreboard objectives add Health health
 scoreboard objectives setdisplay list Health
 scoreboard objectives add Deaths deathCount
 scoreboard players set @a Deaths 0
+scoreboard objectives setdisplay sidebar
+scoreboard objectives remove Gamemode
 
 ## Create PVP Announcement Timer
 
