@@ -17,4 +17,4 @@ execute if entity @p[team=dark_blue,scores={readyuptrigger=1..}] run function uh
 execute if entity @p[team=dark_gray,scores={readyuptrigger=1..}] run function uhc:ready_up/team/dark_gray_team
 execute if entity @p[team=black,scores={readyuptrigger=1..}] run function uhc:ready_up/team/black_team
 
-execute unless score NumTeams activeteams matches 0 if score #NumTeamsReady readyup = NumTeams activeteams run function uhc:ready_up/ready_up_sucess
+execute if score #NumTeamsReady readyup = NumTeams activeteams run function uhc:ready_up/ready_up_sucess

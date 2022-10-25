@@ -30,6 +30,8 @@ gamerule doDaylightCycle false
 gamerule doInsomnia false
 gamerule doMobSpawning false
 gamerule doPatrolSpawning false
+gamerule doWeatherCycle false
+gamerule doFireTick false
 
 ## Setup scoreboard
 

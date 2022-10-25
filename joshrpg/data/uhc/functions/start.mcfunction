@@ -18,6 +18,7 @@ clear @a
 effect clear @a
 effect give @a minecraft:saturation 1 20
 effect give @a minecraft:regeneration 2 255
+effect give @a[team=admin] minecraft:night_vision 1000000 0 true
 
 ## Reset Deaths scoareboards
 
@@ -40,6 +41,8 @@ gamerule disableRaids false
 gamerule doInsomnia true
 gamerule doMobSpawning true
 gamerule doPatrolSpawning false
+gamerule doWeatherCycle true
+gamerule doFireTick true
 
 ## Border Shrinks to a 2x2 for 9000 seconds (2.5 hours)
 

@@ -18,5 +18,5 @@ execute at @e[tag=lobby_locator] run tp @a[distance=7..,team=!admin] ~ ~1 ~
 
 # Pre game gamemodes
 
-gamemode creative @a[team=admin]
+execute unless score spread_players Gamestate matches 1 run gamemode creative @a[team=admin]
 gamemode adventure @a[team=!admin]
