@@ -2,7 +2,15 @@
 
 ## Set dead players to spectator
 
-gamemode spectator @a[scores={Deaths=1}]
+gamemode spectator @a[scores={Deaths=1},tag=!dead]
+
+## On death, set spawnpoint to death location
+
+execute if entity @p[scores={Deaths=1},tag=!dead] run execute as @p[scores={Deaths=1},tag=!dead] run function uhc:set_deathpoint
+
+## Give dead players Night Vision
+
+effect give @a[scores={Deaths=1}] night_vision 1000000 0 true
 
 ## Adds 1 to the counter armor stand
 

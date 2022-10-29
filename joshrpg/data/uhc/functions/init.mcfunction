@@ -30,6 +30,8 @@ gamerule doDaylightCycle false
 gamerule doInsomnia false
 gamerule doMobSpawning false
 gamerule doPatrolSpawning false
+gamerule doWeatherCycle false
+gamerule doFireTick false
 
 ## Setup scoreboard
 
@@ -38,13 +40,15 @@ scoreboard objectives add Health health
 scoreboard objectives setdisplay list Health
 scoreboard objectives add Deaths deathCount
 scoreboard players set @a Deaths 0
+scoreboard objectives setdisplay sidebar
+scoreboard objectives remove Gamemode
 
 ## Create PVP Announcement Timer
 
 scoreboard objectives add pvpAnnCounter dummy "PVP Announcement Timer"
 scoreboard players set @e pvpAnnCounter 0
 
-## Create the game state pig
+## Create the game state scores
 
 scoreboard objectives add Gamestate dummy
 setblock 30 0 30 air
@@ -53,6 +57,7 @@ scoreboard players set @e[tag=gamestate,type=pig] Gamestate 0
 scoreboard players reset spread_players
 scoreboard players reset #ReadyUpCheckAcitve
 scoreboard players reset dragon_uhc
+tag @a remove dead
 
 ## Setup world borders
 ## Don't change the order because this works only on spigot/papermc

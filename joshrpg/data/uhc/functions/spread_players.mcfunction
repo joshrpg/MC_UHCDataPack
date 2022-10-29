@@ -1,5 +1,8 @@
 # Spread Players
 
+## Players join solo teams if not on team
+execute if entity @a[team=] run function uhc:team1
+
 ## spreadplayers <X> <Y> <spreadDistance> <maxDistance> <respectTeams> @a
 
 spreadplayers 0.0 0.0 500 800 true @a[team=!spec,team=!admin]
@@ -14,6 +17,10 @@ kill @e[type=minecraft:item]
 
 effect give @a[team=!admin] minecraft:slowness 1000000 255 true
 effect give @a[team=!admin] minecraft:jump_boost 1000000 128 true
+
+## Set admins to spectator
+
+gamemode spectator @a[team=admin]
 
 ## Set spread_players Gamestate to mark players as spread
 
