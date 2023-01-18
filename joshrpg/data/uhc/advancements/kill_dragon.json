@@ -1,38 +1,41 @@
 {
-    "criteria": {
-      "killed_dragon": {
-        "conditions": {
-          "entity": [
-            {
-              "condition": "minecraft:entity_properties",
-              "entity": "this",
-              "predicate": {
-                "type": "minecraft:ender_dragon"
-              }
+  "parent": "uhc:enter_end",
+  "criteria": {
+    "killed_dragon": {
+      "conditions": {
+        "entity": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "type": "minecraft:ender_dragon"
             }
-          ]
-        },
-        "trigger": "minecraft:player_killed_entity"
-      }
-    },
-    "display": {
-      "title": "Win Dragon UHC",
-      "description": ["",{"text":"Kill the Ender Dragon to Win the UHC!\n","color":"gold"}],
-      "frame": "challenge",
-      "hidden": false,
-      "icon": {
-        "item": "minecraft:dragon_head"
+          }
+        ]
       },
-      "background": "minecraft:textures/block/end_stone.png",
-      "announce_to_chat": false,
-      "show_toast": false
-    },
-    "requirements": [
-      [
-        "killed_dragon"
-      ]
-    ],
-    "rewards": {
-        "function": "uhc:dragon/dragon_killed"
+      "trigger": "minecraft:player_killed_entity"
     }
+  },
+  "display": {
+    "title": "Win Dragon UHC",
+    "description": [
+      {"text":"Kill the Ender Dragon to win the UHC!\n","color":"gold"}
+    ],
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:dragon_head"
+    },
+    "background": "minecraft:textures/block/end_stone.png",
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "requirements": [
+    [
+      "killed_dragon"
+    ]
+  ],
+  "rewards": {
+      "function": "uhc:dragon/dragon_killed"
+  }
 }

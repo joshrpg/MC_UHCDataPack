@@ -40,7 +40,7 @@ gamerule doDaylightCycle true
 gamerule disableRaids false
 gamerule doInsomnia true
 gamerule doMobSpawning true
-gamerule doPatrolSpawning false
+gamerule doPatrolSpawning true
 gamerule doWeatherCycle true
 gamerule doFireTick true
 
@@ -52,6 +52,10 @@ gamerule doFireTick true
 ## Border Shrinks to a 64x64 for 9000 seconds (2.5 hours) unless it's a Dragon UHC
 
 execute unless score dragon_uhc Gamestate matches 1 run execute in minecraft:overworld run worldborder set 64 9000
+
+## If it's a Dragon UHC, assign teams end spawn points
+
+execute if score dragon_uhc Gamestate matches 1 run function uhc:dragon/set_team_spawn_points
 
 ## Makes sure the game is set to "hard"
 
