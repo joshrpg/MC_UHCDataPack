@@ -1,3 +1,4 @@
-# Annouce killer of the ender dragon (reward for the kill_dragon advacnement)
+# Triggered by the kill_dragon advancement, schedule announce dragon kill
+# Announcement must be scheduled for the statistics score to be updated correctly
 
-tellraw @a [{"selector":"@s"}, {"text":" killed the Ender Dragon!","color":"white"}]
+schedule function uhc:dragon/announce_dragon_killed 1t

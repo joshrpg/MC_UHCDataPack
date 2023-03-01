@@ -57,6 +57,9 @@ scoreboard players set @e[tag=gamestate,type=pig] Gamestate 0
 scoreboard players reset spread_players
 scoreboard players reset #ReadyUpCheckAcitve
 scoreboard players reset dragon_uhc
+scoreboard players reset #TeamEnteredEnd
+scoreboard objectives remove DragonKills
+execute in the_end run forceload remove all
 tag @a remove dead
 
 ## Setup world borders

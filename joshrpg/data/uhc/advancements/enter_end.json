@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "entered_end": {
+      "conditions": {
+        "to": "minecraft:the_end"
+      },
+      "trigger": "minecraft:changed_dimension"
+    }
+  },
+  "display": {
+    "title": "Dragon UHC",
+    "background": "minecraft:textures/block/end_stone.png",
+    "description": "Good Luck!",
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "minecraft:end_stone"
+    },
+    "announce_to_chat": false,
+    "show_toast": false
+  },
+  "requirements": [
+    [
+      "entered_end"
+    ]
+  ],
+  "rewards": {
+    "function": "uhc:dragon/enter_end"
+  }
+}
